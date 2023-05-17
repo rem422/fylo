@@ -2,7 +2,9 @@ import NavbarSection from './NavbarSection/Navbar'
 import HeroSection from './HeroSection/Hero'
 import FeaturesSection from './FeaturesSection/Feature'
 import TeamSection from './TeamSection/Team'
-import Testimonials from './TestimonialSection/Testimonials'
+import TestimonialsSection from './TestimonialSection/Testimonials'
+import NewsletterSection from './NewsletterSection/Newsletter'
+import FooterSection from './FooterSection/Footer'
 
 function Index() {
   return (
@@ -11,7 +13,9 @@ function Index() {
         <HeroSection />
         <FeaturesSection />
         <TeamSection />
-        <Testimonials />
+        <TestimonialsSection />
+        <NewsletterSection />
+        <FooterSection />
     </>
   )
 }

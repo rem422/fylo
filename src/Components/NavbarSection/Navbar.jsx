@@ -93,6 +93,7 @@ const NavbarSection = styled.div`
     background-color: transparent;
     backdrop-filter: blur(30px);
     transition: var(--transition);
+    z-index: 999;
 
     &.sticky {
       background-color: var(--footerBg);
@@ -120,7 +121,6 @@ const NavbarSection = styled.div`
         padding: .5rem 1rem;
         color: var(--textColor);
         font-weight: 500;
-        /* font-size: 1.2rem; */
         transition: var(--transition);
 
         &:hover {
@@ -132,10 +132,7 @@ const NavbarSection = styled.div`
 
         .menu_icon,
         .close_icon {
-            /* width: 30px;
-            height: 30px; */
             cursor: pointer;
-            /* margin-left: 10px; */
             padding: 3px;
             font-size: 1.4rem;
             transition: .3s ease;
