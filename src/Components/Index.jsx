@@ -5,10 +5,12 @@ import TeamSection from './TeamSection/Team'
 import TestimonialsSection from './TestimonialSection/Testimonials'
 import NewsletterSection from './NewsletterSection/Newsletter'
 import FooterSection from './FooterSection/Footer'
+import ScrollBtn from './ScrollBtn/ScrollBtn'
 
 function Index() {
   return (
     <>
+        <ScrollBtn />
         <NavbarSection />
         <HeroSection />
         <FeaturesSection />
