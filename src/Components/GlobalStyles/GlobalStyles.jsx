@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --btnColor: #8BDAE3;
     --textColor: #9a9b9d;
+    --sectionBg: #181F2A;
     --footerBg: #0C1524;
     --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     --font-poppins: 'Poppins', sans-serif;
@@ -25,21 +26,22 @@ const GlobalStyles = createGlobalStyle`
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
     background: var(--bodyBg);
     font-family: var(--font-poppins);
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1, h2, h3, h4, h5{
-    color: var()--footerBg;
+    color: var(--white);
     font-family: var(--font-poppins);
     font-weight: 600;
 }
@@ -54,14 +56,20 @@ p {
     color: var(--textColor);
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 button {
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--white);
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 7%, rgba(1,181,234,1) 71%, rgba(13,170,228,1) 92%);
-    padding: .8rem 3rem;
+    padding: .8rem 5rem;
     transition-property: background;
     transition: var(--transition);
     cursor: pointer;
@@ -74,13 +82,9 @@ button:hover {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     flex-wrap: wrap;
-}
-
-.logo {
-    width: 140px;
 }
 
 @media only screen and (max-width:1280px) {
@@ -90,11 +94,9 @@ container {
 }
 
 @media only screen and (max-width:500px) {
-.logo {
-    width: 120px;
-}
 
 button {
+    font-size: .8rem;
     padding: .6rem 1.8rem;
 }
 }
