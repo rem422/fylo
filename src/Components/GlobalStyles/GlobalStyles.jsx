@@ -62,6 +62,7 @@ img {
 }
 
 button {
+    position: relative;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--white);
@@ -73,12 +74,26 @@ button {
     transition-property: background;
     transition: var(--transition);
     cursor: pointer;
+    z-index: 1;
 }
 
-button:hover {
+button::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 7%, rgba(1,181,234,1) 30%, rgba(28,121,156,1) 78%);
     transition: var(--transition);
+    opacity:0;
+    z-index: -1;
+}
+
+button:hover::before {
+    opacity: 1;
 }
 
 .container {
@@ -100,6 +115,5 @@ button {
     padding: .6rem 1.8rem;
 }
 }
-
 `
 export default GlobalStyles;
