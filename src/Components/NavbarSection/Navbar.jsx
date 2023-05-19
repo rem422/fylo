@@ -168,8 +168,8 @@ const NavbarSection = styled.div`
 
   .close_icon {
     position: absolute;
-    right: 14px;
-    top: 19px;
+    right: 24px;
+    top: 22px;
     transition: all 0.3s ease;
     &:hover {
       svg {
